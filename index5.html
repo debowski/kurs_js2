@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>zadanie 5</title>
+  </head>
+  <body>
+    <form id="z5">
+      A1: <input type="number" name="A1" value=""><br />
+      R : <input type="number" name="R" value=""><br />
+      N : <input type="number" name="N" value=""><br />
+      <input type="button" name="go" value="Generuj ciąg" onclick="f1()"><br />
+    </form>
+
+    <p id="wynik"></p>
+
+    <script type="text/javascript">
+    function f1(){
+      let a1 = parseFloat(document.getElementById('z5').A1.value);
+      let r  = parseFloat(document.getElementById('z5').R.value);
+      let n  = parseFloat(document.getElementById('z5').N.value);
+      let ciag = "";
+
+      let i = 0;
+
+      //tutaj wymyślić jak zresetować ten ciąg znaków
+
+      for (i = 0 ; i < n ; i++){
+        ciag = document.getElementById('wynik').innerText + " " + a1;
+        document.getElementById('wynik').innerText = ciag;
+        a1 = a1 + r;
+      }
+
+
+
+    }
+    </script>
+  </body>
+</html>
