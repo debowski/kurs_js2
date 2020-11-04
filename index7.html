@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOOM2</title>
+  </head>
+  <body>
+
+<button type="button" name="button" onclick="dodaj()">Naciśnij!</button>
+
+    <ul id="du">
+        <!-- tu będą dodawane kolejne elementy listy -->
+    </ul>
+
+
+
+<script type="text/javascript">
+
+  function dodaj(){
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode("Pa! ");
+    node.appendChild(textnode);
+    document.getElementById("du").appendChild(node);
+
+  }
+</script>
+
+
+  </body>
+</html>

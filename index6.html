@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOOM</title>
+  </head>
+  <body>
+
+    </head>
+
+    <body>
+      <button onclick="dodajWezelTekstowy('TAK! ');">TAK!</button>
+      <button onclick="dodajWezelTekstowy('NIE! ');">NIE!</button>
+      <button onclick="dodajWezelTekstowy('JASNE! ');">JASNE!</button>
+      <hr />
+      <p id="p1">Pierwsza linia paragrafu.</p>
+
+      <script>
+      function dodajWezelTekstowy(tekst) {
+        var nowytekst = document.createTextNode(tekst),
+            p1 = document.getElementById("p1");
+
+        p1.appendChild(nowytekst);
+      }
+      </script>
+
+  </body>
+</html>
